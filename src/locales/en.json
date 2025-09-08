@@ -397,7 +397,6 @@
     "action": "Action",
     "details": "Details",
     "succeeded": "Succeeded",
-    "failed": "Failed",
     "pending": "Pending",
     "refunded": "Refunded",
     "invoice": "Invoice",
