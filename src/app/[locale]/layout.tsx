@@ -74,8 +74,8 @@ export default async function LocaleLayout({
           rel="stylesheet"
         />
         <Script
-          src="https://umami.nuknal.com/script.js"
-          data-website-id="07cdda53-06b3-447c-8c30-1bceab22ac91"
+          src={process.env.UMAMI_SCRIPT_URL}
+          data-website-id={process.env.UMAMI_WEBSITE_ID}
         />
       </head>
       <body className="bg-gray-50 font-sans dark:bg-gray-900">
