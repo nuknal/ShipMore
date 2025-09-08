@@ -57,7 +57,7 @@ export function Footer() {
                 className="mr-2"
               />
               <h3 className="gradient-text text-2xl font-bold">
-                AppTemplate
+                ShipMore
               </h3>
             </div>
             {/* <p className="mb-6 max-w-md text-gray-300 dark:text-gray-400">
@@ -65,7 +65,7 @@ export function Footer() {
             </p> */}
             <div className="flex space-x-4">
               <Link
-                href="https://x.com/AppTemplate"
+                href="https://x.com/ShipMore"
                 className="flex size-10 items-center justify-center rounded-full border border-gray-700 text-gray-400 transition-colors hover:border-primary-500 hover:text-primary-400 dark:border-gray-600 dark:hover:border-primary-400"
                 aria-label="X"
               >
@@ -127,7 +127,7 @@ export function Footer() {
               {' '}
               {new Date().getFullYear()}
               {' '}
-              AppTemplate
+              ShipMore
               {' '}
               {t('copyright')}
             </p>

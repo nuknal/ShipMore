@@ -39,7 +39,7 @@ export function AppHeader() {
           <Link href="/" className="flex items-center">
             <Image
               src="/knowone.svg"
-              alt="AppTemplate AI Logo"
+              alt="ShipMore Logo"
               width={28}
               height={28}
               className="mr-2"

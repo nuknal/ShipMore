@@ -100,15 +100,15 @@ export function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
               src="/knowone.svg"
-              alt="KnowOne AI Logo"
+              alt="ShipMore Logo"
               width={32}
               height={32}
               className="mr-2"
             />
             <p className="text-2xl font-bold">
-              <span className="text-primary-700 dark:text-primary-500">Know</span>
-              <span className="text-primary-500 dark:text-primary-400">One</span>
-              <span className="text-primary-300 dark:text-primary-300"> AI</span>
+              <span className="text-primary-700 dark:text-primary-500">Ship</span>
+              <span className="text-primary-500 dark:text-primary-400">More</span>
+              <span className="text-primary-300 dark:text-primary-300"></span>
             </p>
           </Link>
 

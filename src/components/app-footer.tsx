@@ -27,7 +27,7 @@ export function AppFooter() {
               <FooterText className="text-gray-300 dark:text-gray-400">
                 {currentYear}
                 {' '}
-                AppTemplate.AI
+                ShipMore
                 {t('copyright')}
               </FooterText>
             </div>
