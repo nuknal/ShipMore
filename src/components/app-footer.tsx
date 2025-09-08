@@ -52,7 +52,7 @@ export function AppFooter() {
             <Link href="/privacy" className="text-xs text-gray-400 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400">
               {t('privacy')}
             </Link>
-            <Link href="mailto:hello@knowone.ai" className="text-xs text-gray-400 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400">
+            <Link href="mailto:hello@shipmore.xyz" className="text-xs text-gray-400 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400">
               {t('contact')}
             </Link>
           </FooterLinks>

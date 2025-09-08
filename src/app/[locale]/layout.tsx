@@ -18,9 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
-  let canonicalUrl = `https://knowone.ai/${locale}`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_APP_URL}/${locale}`;
   if (locale === 'en') {
-    canonicalUrl = 'https://knowone.ai/';
+    canonicalUrl = `${process.env.NEXT_PUBLIC_APP_URL}/`;
   }
 
   const keywordsString = 'KnowOne,AI洞察, 社交技能, 人际关系, 情绪识别, 潜台词解析, 深度心理分析, AI Insights,social skills,relationship, mental, emotions, psychology,feelings, suggestions';
@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: canonicalUrl,
       languages: routing.locales.reduce((acc, currentLocaleInLoop) => {
         acc[currentLocaleInLoop] = currentLocaleInLoop === 'en'
-          ? 'https://knowone.ai/'
-          : `https://knowone.ai/${currentLocaleInLoop}`;
+          ? `${process.env.NEXT_PUBLIC_APP_URL}/`
+          : `${process.env.NEXT_PUBLIC_APP_URL}/${currentLocaleInLoop}`;
         return acc;
       }, {} as Record<string, string>),
     },

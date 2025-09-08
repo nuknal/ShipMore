@@ -46,7 +46,7 @@ export function Hero() {
           <div className="relative">
             <Image
               src={locale === 'zh' ? '/images/hero-image-zh.svg' : '/images/hero-image.svg'}
-              alt="KnowOne.AI"
+              alt="ShipMore"
               width={600}
               height={400}
               priority

@@ -29,7 +29,7 @@ export function AnnouncementManager() {
       type: 'beta',
       // 如果不设置message，将使用i18n中的默认消息
       actionText: 'feedback',
-      actionUrl: 'mailto:support@knowone.ai',
+      actionUrl: 'mailto:support@shipmore.xyz',
       // 不设置过期时间则一直显示
       expiresAt: '2025-07-31',
     },

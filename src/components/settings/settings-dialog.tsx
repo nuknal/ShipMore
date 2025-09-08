@@ -243,7 +243,7 @@ export default function SettingsDialog({ isOpen, onClose }: SettingsDialogProps)
                   <div className="mb-2 sm:mb-0 sm:pr-8">
                     <h3 className="font-medium text-gray-800 dark:text-gray-100">{t('contact_us')}</h3>
                   </div>
-                  <a href="mailto:support@knowone.ai" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">support@knowone.ai</a>
+                  <a href="mailto:support@shipmore.xyz" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">support@shipmore.xyz</a>
                 </div>
 
                 <div className="flex flex-col py-4 sm:flex-row sm:items-center sm:justify-between">

@@ -1,37 +1,41 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.knowone.ai'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://www.shipmore.xyz'),
   // General SEO - English First
-  title: 'KnowOne AI - Understand Conversations, Improve Relationships',
-  description: 'Unlock deeper understanding in your interactions with KnowOne AI. Analyze text & images for hidden emotions, subtext, and psychological insights. Get smart suggestions to respond better and build stronger connections.',
+  title: 'ShipMore - Next.js Application Template for Rapid Development',
+  description: 'Build modern web applications faster with ShipMore - a comprehensive Next.js template featuring user authentication, payment integration, multi-language support, and modern UI components. Save months of development time.',
   keywords: [
-    'AI social skills',
-    'relationship improvement AI',
-    'conversation analysis',
-    'emotion recognition AI',
-    'subtext interpretation',
-    'psychological analysis tool',
-    'communication skills AI',
-    'understand others better',
-    'smart response suggestions',
-    'KnowOne AI',
-    'interpersonal skills',
-    'emotional intelligence AI',
+    'Next.js template',
+    'React application template',
+    'web app boilerplate',
+    'Next.js starter',
+    'full-stack template',
+    'TypeScript template',
+    'authentication template',
+    'payment integration',
+    'multi-language app',
+    'Tailwind CSS template',
+    'modern web development',
+    'rapid prototyping',
+    'developer tools',
+    'SaaS template',
+    'startup template',
+    'ShipMore',
   ],
 
   // Open Graph (OG) metadata - English First
   openGraph: {
-    title: 'KnowOne AI: Decode Conversations, Enhance Your Social Skills',
-    description: 'Gain AI-powered insights into emotions, intentions, and subtext. KnowOne AI helps you understand more and respond smarter to build meaningful relationships.',
-    url: 'https://www.knowone.ai', // 请确保这是正确的生产环境 URL
-    siteName: 'KnowOne AI',
+    title: 'ShipMore - Build Modern Web Apps Faster with Next.js Template',
+    description: 'Comprehensive Next.js application template with authentication, payments, internationalization, and modern UI. Perfect for developers and startups building SaaS products.',
+    url: process.env.NEXT_PUBLIC_APP_URL,
+    siteName: 'ShipMore',
     images: [
       {
-        url: '/og-image-knowone-social.png', // 建议使用一个能代表社交理解和连接的 OG 图片
+        url: '/og-image-shipmore.png',
         width: 1200,
         height: 630,
-        alt: 'KnowOne AI helping understand conversations and improve relationships',
+        alt: 'ShipMore Next.js application template for rapid development',
       },
     ],
     locale: 'en_US',
@@ -41,18 +45,18 @@ export const metadata: Metadata = {
   // Twitter Card metadata - English First
   twitter: {
     card: 'summary_large_image',
-    title: 'KnowOne AI - Master Social Interactions with AI Insights',
-    description: 'Decode conversations, understand emotions, and get smart response suggestions with KnowOne AI. Elevate your communication and relationships.',
-    // site: '@KnowOneAI', // 如果有官方 Twitter Handle，请填写
+    title: 'ShipMore - Next.js Template for Rapid Web Development',
+    description: 'Build modern web applications faster with our comprehensive Next.js template. Features authentication, payments, i18n, and modern UI components.',
+    // site: '@ShipMoreXYZ', // 如果有官方 Twitter Handle，请填写
     // creator: '@YourCreatorHandle', // 内容创建者的 Handle
-    images: ['/twitter-card-knowone.png'], // 建议使用一个适合 Twitter 的图片
+    images: ['/twitter-card-shipmore.png'], // 建议使用一个适合 Twitter 的图片
   },
 
   alternates: {
-    canonical: '/', // 假设 (unauth) 路径下的 landing page 是英文的规范根路径
+    canonical: '/', // (unauth) 路径下的 landing page 是规范根路径
     languages: {
-      en: 'https://www.knowone.ai/', // 根据您的路由调整
-      zh: 'https://www.knowone.ai/zh',
+      en: `${process.env.NEXT_PUBLIC_APP_URL}/`,
+      zh: `${process.env.NEXT_PUBLIC_APP_URL}/zh`,
     },
   },
 

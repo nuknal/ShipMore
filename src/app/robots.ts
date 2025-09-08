@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = 'https://knowone.ai'; // 替换为你的实际域名
+  const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.shipmore.xyz'; // 替换为你的实际域名
 
   return {
     rules: [

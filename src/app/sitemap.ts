@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing'; // 假设 routing.ts 在此路径
 
-const siteUrl = 'https://knowone.ai'; // 替换为你的实际域名
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.shipmore.xyz'; // 替换为你的实际域名
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const { locales, defaultLocale } = routing;

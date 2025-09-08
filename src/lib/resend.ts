@@ -9,7 +9,7 @@ const resend = new Resend(process.env.RESEND_API_KEY!);
 export async function sendEmail(to: string, subject: string, html: string) {
   try {
     const { error } = await resend.emails.send({
-      from: 'KnowOne <hello@knowone.ai>',
+      from: 'KnowOne <hello@shipmore.xyz>',
       to,
       subject,
       html,
@@ -26,9 +26,9 @@ export async function sendEmail(to: string, subject: string, html: string) {
 export async function sendWelcomeEmail(email: string, key: string, language: string) {
   try {
     const { error } = await resend.emails.send({
-      from: 'KnowMore <hello@knowone.ai>',
+      from: 'KnowMore <hello@shipmore.xyz>',
       to: email,
-      subject: 'Welcome to KnowOne.AI',
+      subject: 'Welcome to ShipMore',
       react: WelcomeEmail({ email, key, language }),
     });
 
@@ -47,7 +47,7 @@ export const sendVerificationRequest = async (
   try {
     const resend = new Resend(process.env.RESEND_API_KEY!);
     await resend.emails.send({
-      from: 'KnowOne <hello@knowone.ai>',
+      from: 'KnowOne <hello@shipmore.xyz>',
       to: email,
       subject: 'Login Link to your Account',
       html: `<p>Click the magic link below to sign in to your account:</p>\
