@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     canonicalUrl = `${process.env.NEXT_PUBLIC_APP_URL}/`;
   }
 
-  const keywordsString = 'KnowOne,AI洞察, 社交技能, 人际关系, 情绪识别, 潜台词解析, 深度心理分析, AI Insights,social skills,relationship, mental, emotions, psychology,feelings, suggestions';
+  const keywordsString = 'ShipMore,Next.js模板,React应用模板,全栈模板,TypeScript模板,认证模板,支付集成,多语言应用,现代Web开发,快速原型,开发者工具,SaaS模板,创业模板,Next.js template,React application template,full-stack template,TypeScript template,authentication template,payment integration,multi-language app,modern web development,rapid prototyping,developer tools,SaaS template,startup template';
   const keywordsArray = keywordsString.split(',').map(k => k.trim());
 
   return {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       }, {} as Record<string, string>),
     },
     icons: {
-      icon: '/knowone.svg',
+      icon: '/shipmore.png',
     },
   };
 }

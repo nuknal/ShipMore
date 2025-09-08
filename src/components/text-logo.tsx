@@ -6,7 +6,7 @@ export default function TextLogo() {
     <div className="flex items-center">
       <Link href="/" className="flex items-center">
         <Image
-          src="/knowone.svg"
+          src="/shipmore.png"
           alt="App Template Logo"
           width={28}
           height={28}

@@ -38,7 +38,7 @@ export function AppHeader() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/knowone.svg"
+              src="/shipmore.png"
               alt="ShipMore Logo"
               width={28}
               height={28}

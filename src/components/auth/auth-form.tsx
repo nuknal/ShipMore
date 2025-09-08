@@ -111,7 +111,7 @@ export default function AuthForm({ mode, locale }: AuthFormProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/knowone.svg"
+              src="/shipmore.png"
               alt="KnowOne AI Logo"
               width={32}
               height={32}

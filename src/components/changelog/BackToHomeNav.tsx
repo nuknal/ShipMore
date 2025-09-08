@@ -8,7 +8,7 @@ export function BackToHomeNav() {
       <ChevronLeft className="mr-1 size-4" />
       <div className="flex items-center">
         <Image
-          src="/knowone.svg"
+          src="/shipmore.png"
           alt="KnowOne AI Logo"
           width={28}
           height={28}

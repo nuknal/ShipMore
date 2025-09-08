@@ -50,7 +50,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-center">
               <Image
-                src="/knowone.svg"
+                src="/shipmore.png"
                 alt="App Template Logo"
                 width={36}
                 height={36}

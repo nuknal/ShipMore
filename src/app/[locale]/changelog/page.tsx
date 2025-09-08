@@ -3,8 +3,8 @@ import { BackToHomeNav } from '@/components/changelog/BackToHomeNav';
 import { ChangelogList } from '@/components/changelog/ChangelogList';
 
 export const metadata: Metadata = {
-  title: '更新日志 | KnowOne AI',
-  description: '查看 KnowOne AI 的最新更新、功能改进和修复的问题',
+  title: 'ShipMore - Changelog',
+  description: '查看 ShipMore 的最新更新、功能改进和修复的问题',
 };
 
 export default function ChangelogPage() {

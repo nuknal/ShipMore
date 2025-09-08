@@ -99,7 +99,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/knowone.svg"
+              src="/shipmore.png"
               alt="ShipMore Logo"
               width={32}
               height={32}
