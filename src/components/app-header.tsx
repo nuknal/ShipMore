@@ -45,8 +45,8 @@ export function AppHeader() {
               className="mr-2"
             />
             <h1 className="text-xl font-bold">
-              <span className="text-primary-700 dark:text-primary-400">Know</span>
-              <span className="text-primary-500 dark:text-primary-300">One</span>
+              <span className="text-primary-700 dark:text-primary-400">Ship</span>
+              <span className="text-primary-500 dark:text-primary-300">More</span>
             </h1>
           </Link>
         </div>

@@ -62,10 +62,10 @@
       "title": {
         "highlighted": "Next.js",
         "main": "App Template",
-        "last": "App Template",
+        "last": "Next.js Template",
         "and": "",
-        "understand_more": "Understand more,",
-        "respond_smarter": "respond better"
+        "understand_more": "Ship More and ",
+        "respond_smarter": "Ship Faster"
       },
       "description": "A complete Next.js application template with user authentication, payment integration, internationalization, theme switching, and other essential features for modern applications. Get started quickly and focus on your business logic.",
       "primaryButton": "Get Started",

@@ -82,6 +82,8 @@ export function Navbar() {
     { name: t('Testimonials.badge'), href: '#testimonials' },
     { name: t('Pricing.badge'), href: '#pricing' },
     { name: t('FAQ.badge'), href: '#faq' },
+    { name: 'Dashboard', href: '/dashboard' },
+    { name: 'Github', href: 'https://github.com/nuknal/shipmore' },
   ];
 
   return (

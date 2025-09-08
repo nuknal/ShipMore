@@ -62,10 +62,10 @@
       "title": {
         "highlighted": "Next.js",
         "main": "应用模板",
-        "last": "应用模板",
+        "last": "Next.js 模板",
         "and": "",
-        "understand_more": "理解更多，",
-        "respond_smarter": "回应更好"
+        "understand_more": "发布更多，",
+        "respond_smarter": "上线更快"
       },
       "description": "一个功能完整的 Next.js 应用程序模板，包含用户认证、支付集成、多语言支持、主题切换等现代应用必需的功能。帮助您快速启动项目，专注于业务逻辑开发。",
       "primaryButton": "开始使用",
