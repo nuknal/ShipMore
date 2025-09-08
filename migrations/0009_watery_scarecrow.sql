@@ -1,1 +1,0 @@
-ALTER TABLE "visitor_logs" ADD COLUMN "method" text;

@@ -7,7 +7,7 @@ import { getSignedUrlForUpload } from '@/lib/r2';
 import { ApiResponseHelper } from '@/types/api';
 
 export async function POST(request: NextRequest) {
-  const { fileName, fileType, fileSize, characterId, originalName } = await request.json();
+  const { fileName, fileType, fileSize, originalName } = await request.json();
 
   const userId = await getUserId(request);
   if (!userId || userId === '') {
@@ -24,7 +24,6 @@ export async function POST(request: NextRequest) {
       contentType: fileType,
       size: fileSize,
       userId,
-      characterId,
     });
   } catch (error) {
     console.error('Error inserting file:', error);

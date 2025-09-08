@@ -1,1 +1,0 @@
-ALTER TABLE "llm_token_usage" ADD COLUMN "duration" integer DEFAULT 0;
