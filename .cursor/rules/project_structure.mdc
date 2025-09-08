@@ -1,0 +1,49 @@
+---
+description: 
+globs: */**
+alwaysApply: false
+---
+# Project Structure and Key Components
+
+This is a Next.js 15 project built with TypeScript.
+
+## Main Entry Points & Configuration
+- **Next.js App Router**: The primary application logic, routing, and pages are located in [src/app/](mdc:src/app).
+- **Package Management**: Project dependencies and scripts are defined in [package.json](mdc:package.json).
+- **Next.js Configuration**: The main configuration for Next.js can be found in [next.config.ts](mdc:next.config.ts).
+- **Middleware**: The primary Next.js middleware is defined in [src/middleware.ts](mdc:src/middleware.ts). Additional middleware might be in [src/middleware/](mdc:src/middleware).
+- **Environment Variables**: Environment variables are managed, likely using `@dotenvx/dotenvx`. Check for `.env` files (though they might be gitignored).
+
+## Core Source Code Directories (`src/`)
+- **UI Components**: Reusable React components are stored in [src/components/](mdc:src/components).
+- **Libraries & Utilities**:
+    - General utility functions: [src/utils/](mdc:src/utils)
+    - Core library code, possibly encapsulating third-party libraries or shared business logic: [src/lib/](mdc:src/lib)
+- **Services**: Modules for interacting with external APIs or backend services reside in [src/services/](mdc:src/services).
+- **Server Actions**: Next.js Server Actions are likely located in [src/actions/](mdc:src/actions).
+- **Database**: Database schema definitions (using Drizzle ORM) and related database logic are in [src/db/](mdc:src/db). The Drizzle ORM configuration is in [drizzle.config.ts](mdc:drizzle.config.ts).
+- **LLM / AI**:
+    - Logic related to Large Language Models (LLMs) and AI SDKs: [src/llm/](mdc:src/llm)
+    - Prompts for AI models: [src/prompts/](mdc:src/prompts)
+- **State Management & Hooks**:
+    - Custom React Hooks: [src/hooks/](mdc:src/hooks)
+    - React Contexts: [src/contexts/](mdc:src/contexts)
+- **Internationalization (i18n)**:
+    - Configuration and core i18n logic: [src/i18n/](mdc:src/i18n)
+    - Locale files (translations): [src/locales/](mdc:src/locales)
+- **Styling**: Global styles and styling utilities can be found in [src/styles/](mdc:src/styles). Tailwind CSS is configured in [tailwind.config.js](mdc:tailwind.config.js).
+- **Scripts**: Custom scripts for various tasks (e.g., seeding data) are in [src/scripts/](mdc:src/scripts). The `tsx` runner is used for TypeScript scripts.
+- **Types**: Global TypeScript type definitions are located in [src/types/](mdc:src/types).
+- **Templates**: Email or other templates might be stored in [src/templates/](mdc:src/templates).
+
+## Testing
+- **Test Configuration**: Vitest is used for testing, configured in [vitest.config.mts](mdc:vitest.config.mts).
+- **Test Setup**: Test setup files like [vitest-setup.ts](mdc:vitest-setup.ts).
+- Test files are likely co-located with source files or in dedicated `__tests__` directories.
+
+## Other Important Files
+- **ESLint Configuration**: [eslint.config.mjs](mdc:eslint.config.mjs)
+- **Prettier Configuration**: [.prettierrc](mdc:.prettierrc)
+- **TypeScript Configuration**: [tsconfig.json](mdc:tsconfig.json)
+- **README**: Project overview and setup instructions: [README.md](mdc:README.md)
+- **Git Ignore**: Specifies intentionally untracked files that Git should ignore: [.gitignore](mdc:.gitignore)

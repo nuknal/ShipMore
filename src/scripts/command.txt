@@ -1,0 +1,3 @@
+npx dotenvx run -f .env.beta -- npx drizzle-kit push  
+
+npx dotenvx run -f .env.beta -- tsx src/scripts/demo-user-characters.ts  

@@ -1,0 +1,452 @@
+{
+  "Metadata": {
+    "title": "Next.js App Template",
+    "description": "A complete Next.js application template with user authentication, payments, internationalization, and theme switching"
+  },
+  "Changelog": {
+    "title": "Changelog",
+    "subtitle": "Stay updated with our latest product improvements",
+    "changeTypes": {
+      "added": "Added",
+      "changed": "Changed",
+      "fixed": "Fixed",
+      "removed": "Removed",
+      "improved": "Improved"
+    }
+  },
+  "Auth": {
+    "signin": {
+      "title": "Sign in to your account",
+      "subtitle": "Welcome back! Please sign in to continue.",
+      "github_signin": "Sign in with GitHub",
+      "google_signin": "Sign in with Google",
+      "apple_signin": "Sign in with Apple",
+      "email_link_signin": "Sign in with email link",
+      "check_email": "Please check your email for the login link",
+      "email_link_failed": "Failed to send email link, please try again",
+      "create_account": "Don't have an account? Sign up",
+      "login_failed": "Login failed, please try again.",
+      "email": "Email",
+      "password": "Password",
+      "or": "or",
+      "turnstile_required": "Please complete verification to continue."
+    },
+    "signup": {
+      "title": "Create new account",
+      "subtitle": "Welcome to our platform!",
+      "github_signup": "Sign up with GitHub",
+      "google_signup": "Sign up with Google",
+      "apple_signup": "Sign up with Apple",
+      "email_link_signup": "Sign up with email link",
+      "email_required": "Please enter your email",
+      "already_have_account": "Already have an account? Sign in",
+      "signup_failed": "Signup failed, please try again.",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "email_placeholder": "Enter your email",
+      "signup": "Sign up",
+      "turnstile_required": "Please complete verification to continue."
+    }
+  },
+  "Landing": {
+    "NavBar": {
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "getStarted": "Get Started",
+      "enterKnow": "Get Started",
+      "changelog": "Changelog"
+    },
+    "Hero": {
+      "badge": "Modern App Template",
+      "title": {
+        "highlighted": "Next.js",
+        "main": "App Template",
+        "last": "App Template",
+        "and": "",
+        "understand_more": "Understand more,",
+        "respond_smarter": "respond better"
+      },
+      "description": "A complete Next.js application template with user authentication, payment integration, internationalization, theme switching, and other essential features for modern applications. Get started quickly and focus on your business logic.",
+      "primaryButton": "Get Started",
+      "secondaryButton": "View Docs"
+    },
+    "Features": {
+      "badge": "Core Features",
+      "title": "Why Choose This Template",
+      "description": "This template integrates essential features for modern app development, letting you focus on business logic",
+      "cards": [
+        {
+          "title": "User Authentication",
+          "description": "Integrated NextAuth.js with support for multiple login methods including GitHub, Google, Apple, and more."
+        },
+        {
+          "title": "Payment Integration",
+          "description": "Complete subscription and payment system with support for Stripe and other payment platforms, including billing management."
+        },
+        {
+          "title": "Internationalization",
+          "description": "Built-in i18n solution based on next-intl, easily add multi-language support to your app."
+        },
+        {
+          "title": "Theme Switching",
+          "description": "Built-in dark/light theme switching with responsive design that works perfectly on all devices."
+        },
+        {
+          "title": "Database Integration",
+          "description": "Type-safe database operations using Drizzle ORM with PostgreSQL support."
+        },
+        {
+          "title": "Modern UI",
+          "description": "Beautiful and customizable user interface built with Tailwind CSS and Shadcn UI components."
+        }
+      ]
+    },
+    "Testimonials": {
+      "badge": "User Feedback",
+      "title": "Trusted by Developers",
+      "description": "See what other developers say about this template",
+      "cards": [
+        {
+          "name": "John Doe",
+          "role": "Full Stack Developer",
+          "avatar": "/images/avatar-1.svg",
+          "content": "This template saved me tons of initial setup time. All the essential features are already configured."
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Product Manager",
+          "avatar": "/images/avatar-2.svg",
+          "content": "Clean code structure and detailed documentation. Team collaboration efficiency improved significantly."
+        },
+        {
+          "name": "Mike Johnson",
+          "role": "Entrepreneur",
+          "avatar": "/images/avatar-3.svg",
+          "content": "Perfect MVP starting point. Helped me validate my product ideas quickly."
+        }
+      ]
+    },
+    "Pricing": {
+      "badge": "Subscription Plans",
+      "title": "Choose Your Plan",
+      "description": "Flexible pricing options to meet different needs",
+      "popularTag": "Most Popular",
+      "most_popular": "Most Popular",
+      "credits_consumption_rule": "Credit consumption rule: Text analysis consumes 1 credit, image analysis consumes 2 credits",
+      "plans": {
+        "0": {
+          "name": "Free",
+          "description": "Perfect for individual developers and small projects",
+          "price": "0",
+          "period": "/month",
+          "buttonText": "Get Started",
+          "features": {
+            "0": "Basic features",
+            "1": "Community support",
+            "2": "Basic templates",
+            "4": "Advanced features",
+            "5": "Priority support",
+            "6": "Custom themes"
+          }
+        },
+        "1": {
+          "name": "Pro",
+          "description": "Best for growing teams and businesses",
+          "price": "19",
+          "period": "/month",
+          "buttonText": "Upgrade Now",
+          "features": {
+            "0": "All basic features",
+            "1": "Priority support",
+            "2": "Advanced templates",
+            "4": "200 text analyses",
+            "5": "50 image analyses",
+            "6": "Custom themes"
+          }
+        },
+        "2": {
+          "name": "Enterprise",
+          "description": "For large enterprises and custom needs",
+          "price": "Contact us",
+          "period": "",
+          "buttonText": "Contact Sales",
+          "features": {
+            "0": "All features",
+            "1": "Dedicated support",
+            "2": "Custom development",
+            "4": "500 text analyses",
+            "5": "100 image analyses",
+            "6": "Private deployment"
+          }
+        }
+      }
+    },
+    "FAQ": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions",
+      "moreQuestions": "Have more questions?",
+      "contactUs": "Contact us",
+      "items": {
+        "0": {
+          "question": "What features are included in this template?",
+          "answer": "The template includes user authentication, payment integration, internationalization, theme switching, database integration, and other essential features for modern applications."
+        },
+        "1": {
+          "question": "What payment methods are supported?",
+          "answer": "Currently supports Stripe payment platform, and can be easily extended to support other payment methods like PayPal, WeChat Pay, etc."
+        },
+        "2": {
+          "question": "Do you provide technical support?",
+          "answer": "We provide detailed documentation and community support. Pro and Enterprise users also get priority technical support."
+        },
+        "3": {
+          "question": "Can I customize the theme?",
+          "answer": "Yes, the template is built with Tailwind CSS, making it easy to customize colors, fonts, and layouts."
+        },
+        "4": {
+          "question": "How do I deploy this application?",
+          "answer": "You can deploy to platforms like Vercel, Netlify, or any server that supports Node.js."
+        }
+      }
+    },
+    "CTA": {
+      "badge": "Ready to get started?",
+      "title": "Start building your app today",
+      "description": "Join thousands of developers using our template to build modern applications quickly",
+      "primaryButton": "Get Started",
+      "secondaryButton": "View Docs"
+    },
+    "HowItWorks": {
+      "badge": "How It Works"
+    },
+    "Footer": {
+      "description": "Modern Next.js application template to help you build great apps quickly.",
+      "subscribeText": "Subscribe to our updates",
+      "copyright": "All rights reserved.",
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal",
+      "resources": "Resources",
+      "links": {
+        "about": "About",
+        "help": "Help",
+        "contact": "Contact",
+        "features": "Features",
+        "pricing": "Pricing",
+        "testimonials": "Testimonials",
+        "faq": "FAQ",
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "security": "Security",
+        "refund": "Refund",
+        "cookies": "Cookies"
+      },
+      "sections": {
+        "product": {
+          "title": "Product",
+          "links": [
+            { "name": "Features", "href": "/#features" },
+            { "name": "Pricing", "href": "/#pricing" },
+            { "name": "Changelog", "href": "/changelog" }
+          ]
+        },
+        "resources": {
+          "title": "Resources",
+          "links": [
+            { "name": "Documentation", "href": "/docs" },
+            { "name": "Blog", "href": "/blog" },
+            { "name": "Community", "href": "/community" }
+          ]
+        },
+        "company": {
+          "title": "Company",
+          "links": [
+            { "name": "About", "href": "/about" },
+            { "name": "Contact", "href": "/contact" }
+          ]
+        },
+        "legal": {
+          "title": "Legal",
+          "links": [
+            { "name": "Privacy Policy", "href": "/privacy" },
+            { "name": "Terms of Service", "href": "/terms" },
+            { "name": "Refund Policy", "href": "/refund" }
+          ]
+        }
+      }
+    },
+    "Stats": {
+      "users": "10k+",
+      "usersLabel": "Users",
+      "profiles": "50k+",
+      "profilesLabel": "Profiles",
+      "satisfaction": "98%",
+      "satisfactionLabel": "Satisfaction",
+      "improvement": "85%",
+      "improvementLabel": "Improvement"
+    }
+  },
+  "Menu": {
+    "home": "Home",
+    "subscription": "Subscription",
+    "settings": "Settings",
+    "signin": "Sign In",
+    "signout": "Sign Out"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your application",
+    "getStarted": "Get Started",
+    "getStartedDesc": "This is a complete application template that you can use as a starting point for rapid development.",
+    "customization": "Customization",
+    "customizationDesc": "Customize the appearance and functionality of your app according to your needs.",
+    "documentation": "Documentation",
+    "documentationDesc": "Check out the detailed documentation to learn how to use and extend this template."
+  },
+  "Settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "theme_description": "Choose your preferred theme",
+    "language": "Language",
+    "language_description": "Select your preferred language",
+    "notifications": "Notifications",
+    "notification": "Notifications",
+    "notification_description": "Manage notification settings",
+    "dataCollection": "Data Collection",
+    "data_collection": "Data Collection",
+    "data_collection_description": "Allow collection of usage data",
+    "save": "Save",
+    "cancel": "Cancel",
+    "font_size": "Font Size",
+    "font_size_description": "Adjust interface font size",
+    "save_analysis_history": "Save Analysis History",
+    "save_analysis_history_description": "Whether to save analysis history",
+    "save_chat_history": "Save Chat History",
+    "save_chat_history_description": "Whether to save chat history",
+    "about": "About",
+    "general": "General",
+    "application_settings": "Application Settings",
+    "privacy_settings": "Privacy Settings",
+    "contact_us": "Contact Us",
+    "service_terms": "Terms of Service",
+    "version": "Version",
+    "view": "View"
+  },
+  "Subscription": {
+    "title": "Subscription Management",
+    "manage_subscription": "Manage Subscription",
+    "currentPlan": "Current Plan",
+    "current_plan": "Current Plan",
+    "usage": "Usage",
+    "billing": "Billing History",
+    "billing_history": "Billing History",
+    "manage": "Manage Subscription",
+    "subscription": "Subscription",
+    "error_loading_data": "Error loading data",
+    "try_again": "Try Again",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing",
+    "select_plan": "Select Plan",
+    "select_plan_description": "Choose the plan that best fits your needs",
+    "processing": "Processing",
+    "already_subscribed": "You are already subscribed to this plan",
+    "failed": "Failed",
+    "most_popular": "Most Popular",
+    "learn_more_pricing": "Learn more about pricing",
+    "pricing_tooltip": "View detailed pricing information and feature comparison",
+    "active": "Active",
+    "canceled": "Canceled",
+    "expired": "Expired",
+    "not_subscribed": "Not Subscribed",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "3_months": "3 Months",
+    "cancel_subscription": "Cancel Subscription",
+    "resume_subscription": "Resume Subscription",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "confirm_cancel_title": "Confirm Cancellation",
+    "confirm_cancel_description": "Are you sure you want to cancel your subscription? You will lose access to all premium features.",
+    "subscription_cancelled": "Subscription Cancelled",
+    "subscription_resumed": "Subscription Resumed",
+    "operation_failed": "Operation Failed",
+    "cancel_subscription_error": "Failed to cancel subscription",
+    "resume_subscription_error": "Failed to resume subscription",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "payment_method": "Payment Method",
+    "usage_statistics": "Usage Statistics",
+    "total_credits": "Total Credits",
+    "text_usage": "Text Usage",
+    "image_usage": "Image Usage",
+    "credits_consumption_rule": "Credit consumption rule: Text analysis consumes 1 credit, image analysis consumes 2 credits",
+    "text_quote_description": "Text analysis usage",
+    "image_quote_description": "Image analysis usage",
+    "no_billing_history": "No Billing History",
+    "no_billing_records": "You don't have any billing records yet.",
+    "no_transactions_found": "No transactions found",
+    "search_transactions": "Search transactions",
+    "filter": "Filter",
+    "sort_by_date": "Sort by Date",
+    "sort_by_amount": "Sort by Amount",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "action": "Action",
+    "details": "Details",
+    "succeeded": "Succeeded",
+    "failed": "Failed",
+    "pending": "Pending",
+    "refunded": "Refunded",
+    "invoice": "Invoice",
+    "receipt": "Receipt",
+    "total_spent": "Total Spent",
+    "total_transactions": "Total Transactions",
+    "view_subscription_plan": "View Subscription Plan",
+    "remaining": "{count} remaining",
+    "used": "{count} used",
+    "reset_at": "Resets on {date}",
+    "days_until_reset": "Resets in {count} days",
+    "subscription_canceled_message": "Your subscription will expire on {date}. You can still use all {plan} features until then."
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for.",
+    "backToHome": "Back to Home",
+    "helpText": "If you need help, please contact us.",
+    "contactUs": "Contact Us",
+    "helpCenter": "Help Center"
+  },
+  "Marketing": {
+    "beta_testing": "Beta Testing",
+    "beta_message": "We're in beta testing, welcome to try it out!",
+    "new_feature_message": "New features are live! Experience the latest functionality now.",
+    "promo_message": "Limited time offer! Subscribe now for special pricing.",
+    "limited_message": "Limited time event, quantities limited!",
+    "ends_in": "Event ends in",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes"
+  },
+  "Common": {
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info"
+  },
+  "errors": {
+    "generic": "An error occurred, please try again later.",
+    "network": "Network connection error, please check your internet connection.",
+    "unauthorized": "You don't have permission to perform this action.",
+    "not_found": "The requested resource was not found.",
+    "validation": "Input data validation failed.",
+    "server": "Server error, please try again later."
+  }
+}

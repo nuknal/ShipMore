@@ -1,0 +1,20 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#ECC8AF" />
+  <text x="300" y="200" font-family="Arial" font-size="36" fill="#495867" text-anchor="middle" dominant-baseline="middle">KnowOne App 界面</text>
+  <rect x="50" y="50" width="500" height="60" rx="10" fill="#FFFFFF" />
+  <rect x="70" y="70" width="30" height="20" rx="5" fill="#C76B5D" />
+  <rect x="120" y="70" width="200" height="20" rx="5" fill="#E7AD99" />
+  
+  <rect x="50" y="130" width="500" height="220" rx="10" fill="#FFFFFF" />
+  <circle cx="100" cy="170" r="30" fill="#B85A4C" />
+  <rect x="150" y="150" width="350" height="15" rx="5" fill="#E7AD99" />
+  <rect x="150" y="175" width="250" height="15" rx="5" fill="#E7AD99" />
+  
+  <rect x="80" y="220" width="440" height="1" fill="#EEEEEE" />
+  
+  <circle cx="100" cy="260" r="30" fill="#C18C5D" />
+  <rect x="150" y="240" width="350" height="15" rx="5" fill="#E7AD99" />
+  <rect x="150" y="265" width="250" height="15" rx="5" fill="#E7AD99" />
+  
+  <rect x="80" y="310" width="440" height="1" fill="#EEEEEE" />
+</svg>

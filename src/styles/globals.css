@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-base; /* 基础字体大小 16px - 确保开发和生产环境一致 */
+    /* 防止滚动条出现时导致布局偏移 */
+    width: 100vw;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    /* 强制字体大小一致性 - 避免Tailwind版本差异影响 */
+    font-size: 16px !important;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100;
+    /* 防止滚动条出现时导致布局偏移 */
+    overflow-x: hidden;
+    /* 确保继承HTML的字体大小设置 - 添加!important避免被覆盖 */
+    font-size: inherit !important;
+  }
+
+  /* 滚动条补偿 */
+  :root {
+    --scrollbar-width: 0px;
+  }
+
+  /* 当有滚动条补偿类时，为固定定位元素添加右边距补偿 */
+  html.has-scrollbar-compensation .fixed,
+  html.has-scrollbar-compensation #navbar {
+    margin-right: var(--scrollbar-width);
+  }
+
+  /* 基础元素样式 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply dark:text-gray-100;
+  }
+
+  p {
+    @apply dark:text-gray-300;
+  }
+
+  a {
+    @apply dark:text-gray-300 dark:hover:text-primary-400;
+  }
+
+  button {
+    @apply dark:text-gray-300;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply text-base dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100;
+    /* 确保表单元素字体大小一致 */
+    font-size: 16px !important;
+  }
+
+  /* 全局自定义滚动条样式 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.3);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.5);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Firefox 滚动条样式 */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  *:hover,
+  *:active {
+    scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+  }
+}
+
+/* 横幅淡入动画 */
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out forwards;
+}
+
+/* 动态渐变文字效果 */
+@keyframes text-gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gradient-animated {
+  background-image: linear-gradient(
+    to right,
+    #e7ad99,
+    /* primary-300 */ #ce796b,
+    /* primary-500 (accent-coral) */ #c18c5d,
+    /* accent-brown */ #b85a4c,
+    /* primary-700 */ #e7ad99 /* back to primary-300 to loop smoothly */
+  );
+  background-size: 300% auto; /* Increased size for more color travel */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: text-gradient-animation 6s linear infinite; /* Adjusted speed */
+}
+
+/* 暗黑模式下的渐变颜色可以考虑不同，但为了简化，这里使用相同的 */
+/* 如果需要，可以添加 .dark .text-gradient-animated { ... } */

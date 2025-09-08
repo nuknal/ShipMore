@@ -1,0 +1,453 @@
+{
+  "Metadata": {
+    "title": "Next.js 应用模板",
+    "description": "一个功能完整的 Next.js 应用程序模板，包含用户认证、支付、多语言和主题切换"
+  },
+  "Changelog": {
+    "title": "更新日志",
+    "subtitle": "了解我们产品的最新更新和改进",
+    "changeTypes": {
+      "added": "新增",
+      "changed": "变更",
+      "fixed": "修复",
+      "removed": "移除",
+      "improved": "改进"
+    }
+  },
+  "Auth": {
+    "signin": {
+      "title": "登录您的账户",
+      "subtitle": "欢迎！请登录继续。",
+      "github_signin": "使用 GitHub 登录",
+      "google_signin": "使用 Google 登录",
+      "apple_signin": "使用 Apple 登录",
+      "email_link_signin": "使用邮箱链接登录",
+      "check_email": "请查看您的邮箱，我们已发送登录链接",
+      "email_link_failed": "邮箱链接发送失败，请重试",
+      "create_account": "没有账户？立即注册",
+      "login_failed": "登录失败，请重试。",
+      "email": "邮箱",
+      "password": "密码",
+      "or": "或",
+      "turnstile_required": "请完成验证以继续。"
+    },
+    "signup": {
+      "title": "创建新账户",
+      "subtitle": "欢迎加入我们的平台！",
+      "github_signup": "使用 GitHub 注册",
+      "google_signup": "使用 Google 注册",
+      "apple_signup": "使用 Apple 注册",
+      "email_link_signup": "使用邮箱链接注册",
+      "email_required": "请输入您的邮箱",
+      "already_have_account": "已有账户？立即登录",
+      "signup_failed": "注册失败，请重试。",
+      "name": "姓名",
+      "email": "邮箱",
+      "password": "密码",
+      "email_placeholder": "请输入您的邮箱",
+      "signup": "注册",
+      "turnstile_required": "请完成验证以继续。"
+    }
+  },
+  "Landing": {
+    "NavBar": {
+      "signIn": "登录",
+      "signUp": "注册",
+      "getStarted": "开始使用",
+      "enterKnow": "开始使用",
+      "changelog": "更新日志"
+    },
+    "Hero": {
+      "badge": "现代化应用模板",
+      "title": {
+        "highlighted": "Next.js",
+        "main": "应用模板",
+        "last": "应用模板",
+        "and": "",
+        "understand_more": "理解更多，",
+        "respond_smarter": "回应更好"
+      },
+      "description": "一个功能完整的 Next.js 应用程序模板，包含用户认证、支付集成、多语言支持、主题切换等现代应用必需的功能。帮助您快速启动项目，专注于业务逻辑开发。",
+      "primaryButton": "开始使用",
+      "secondaryButton": "查看文档"
+    },
+    "Features": {
+      "badge": "核心特性",
+      "title": "为什么选择这个模板",
+      "description": "这个模板集成了现代应用开发所需的核心功能，让您专注于业务逻辑",
+      "cards": [
+        {
+          "title": "用户认证",
+          "description": "集成 NextAuth.js，支持多种登录方式，包括 GitHub、Google、Apple 等社交登录。"
+        },
+        {
+          "title": "支付集成",
+          "description": "完整的订阅和支付系统，支持 Stripe 等主流支付平台，包含账单管理功能。"
+        },
+        {
+          "title": "多语言支持",
+          "description": "基于 next-intl 的国际化解决方案，轻松添加多语言支持。"
+        },
+        {
+          "title": "主题切换",
+          "description": "内置深色/浅色主题切换，响应式设计，完美适配各种设备。"
+        },
+        {
+          "title": "数据库集成",
+          "description": "使用 Drizzle ORM 和 PostgreSQL，类型安全的数据库操作。"
+        },
+        {
+          "title": "现代化UI",
+          "description": "基于 Tailwind CSS 和 Shadcn UI，美观且可定制的用户界面。"
+        }
+      ]
+    },
+    "Testimonials": {
+      "badge": "用户反馈",
+      "title": "开发者们的选择",
+      "description": "看看其他开发者如何评价这个模板",
+      "cards": [
+        {
+          "name": "张三",
+          "role": "全栈开发工程师",
+          "avatar": "/images/avatar-1.svg",
+          "content": "这个模板帮我节省了大量的初始设置时间，所有基础功能都已经配置好了。"
+        },
+        {
+          "name": "李四",
+          "role": "产品经理",
+          "avatar": "/images/avatar-2.svg",
+          "content": "代码结构清晰，文档详细，团队协作效率大大提升。"
+        },
+        {
+          "name": "王五",
+          "role": "创业者",
+          "avatar": "/images/avatar-3.svg",
+          "content": "完美的 MVP 起点，让我能够快速验证产品想法。"
+        }
+      ]
+    },
+    "Pricing": {
+      "badge": "订阅计划",
+      "title": "选择适合您的计划",
+      "description": "灵活的定价方案，满足不同规模的需求",
+      "popularTag": "最受欢迎",
+      "most_popular": "最受欢迎",
+      "credits_consumption_rule": "积分消费规则：文本分析消耗1积分，图片分析消耗2积分",
+      "plans": {
+        "0": {
+          "name": "免费版",
+          "description": "适合个人开发者和小型项目",
+          "price": "0",
+          "period": "/月",
+          "buttonText": "免费开始",
+          "features": {
+            "0": "基础功能",
+            "1": "社区支持",
+            "2": "基础模板",
+            "4": "高级功能",
+            "5": "优先支持",
+            "6": "自定义主题"
+          }
+        },
+        "1": {
+          "name": "专业版",
+          "description": "适合成长中的团队和企业",
+          "price": "99",
+          "period": "/月",
+          "buttonText": "立即升级",
+          "features": {
+            "0": "所有基础功能",
+            "1": "优先支持",
+            "2": "高级模板",
+            "4": "200次文本分析",
+            "5": "50次图片分析",
+            "6": "自定义主题"
+          }
+        },
+        "2": {
+          "name": "企业版",
+          "description": "适合大型企业和定制需求",
+          "price": "联系我们",
+          "period": "",
+          "buttonText": "联系销售",
+          "features": {
+            "0": "所有功能",
+            "1": "专属支持",
+            "2": "定制开发",
+            "4": "500次文本分析",
+            "5": "100次图片分析",
+            "6": "私有部署"
+          }
+        }
+      }
+    },
+    "FAQ": {
+      "badge": "常见问题",
+      "title": "常见问题解答",
+      "description": "查找您可能遇到的问题答案",
+      "moreQuestions": "还有其他问题吗？",
+      "contactUs": "联系我们",
+      "items": {
+        "0": {
+          "question": "这个模板包含哪些功能？",
+          "answer": "模板包含用户认证、支付集成、多语言支持、主题切换、数据库集成等现代应用必需的核心功能。"
+        },
+        "1": {
+          "question": "支持哪些支付方式？",
+          "answer": "目前支持 Stripe 支付平台，可以轻松扩展支持其他支付方式如 PayPal、微信支付等。"
+        },
+        "2": {
+          "question": "是否提供技术支持？",
+          "answer": "我们提供详细的文档和社区支持，专业版和企业版用户还可享受优先技术支持。"
+        },
+        "3": {
+          "question": "可以自定义主题吗？",
+          "answer": "是的，模板基于 Tailwind CSS 构建，您可以轻松自定义颜色、字体和布局。"
+        },
+        "4": {
+          "question": "如何部署这个应用？",
+          "answer": "支持部署到 Vercel、Netlify 等平台，也可以部署到任何支持 Node.js 的服务器。"
+        }
+      }
+    },
+    "CTA": {
+      "badge": "准备开始了吗？",
+      "title": "立即开始构建您的应用",
+      "description": "加入数千名开发者，使用我们的模板快速构建现代化应用",
+      "primaryButton": "免费开始",
+      "secondaryButton": "查看文档"
+    },
+    "HowItWorks": {
+      "badge": "工作原理"
+    },
+    "Footer": {
+      "description": "现代化的 Next.js 应用模板，助您快速构建优秀的应用程序。",
+      "subscribeText": "订阅我们的更新",
+      "copyright": "保留所有权利。",
+      "product": "产品",
+      "company": "公司",
+      "legal": "法律",
+      "resources": "资源",
+      "links": {
+        "about": "关于我们",
+        "help": "帮助",
+        "contact": "联系我们",
+        "features": "功能特性",
+        "pricing": "定价",
+        "testimonials": "用户评价",
+        "faq": "常见问题",
+        "terms": "服务条款",
+        "privacy": "隐私政策",
+        "security": "安全政策",
+        "refund": "退款政策",
+        "cookies": "Cookie政策"
+      },
+      "sections": {
+        "product": {
+          "title": "产品",
+          "links": [
+            { "name": "特性", "href": "/#features" },
+            { "name": "定价", "href": "/#pricing" },
+            { "name": "更新日志", "href": "/changelog" }
+          ]
+        },
+        "resources": {
+          "title": "资源",
+          "links": [
+            { "name": "文档", "href": "/docs" },
+            { "name": "博客", "href": "/blog" },
+            { "name": "社区", "href": "/community" }
+          ]
+        },
+        "company": {
+          "title": "公司",
+          "links": [
+            { "name": "关于我们", "href": "/about" },
+            { "name": "联系我们", "href": "/contact" }
+          ]
+        },
+        "legal": {
+          "title": "法律",
+          "links": [
+            { "name": "隐私政策", "href": "/privacy" },
+            { "name": "服务条款", "href": "/terms" },
+            { "name": "退款政策", "href": "/refund" }
+          ]
+        }
+      }
+    },
+    "Stats": {
+      "users": "10k+",
+      "usersLabel": "用户",
+      "profiles": "50k+",
+      "profilesLabel": "配置文件",
+      "satisfaction": "98%",
+      "satisfactionLabel": "满意度",
+      "improvement": "85%",
+      "improvementLabel": "效率提升"
+    }
+  },
+  "Menu": {
+    "home": "首页",
+    "subscription": "订阅管理",
+    "settings": "设置",
+    "signin": "登录",
+    "signout": "退出"
+  },
+  "Dashboard": {
+    "title": "仪表盘",
+    "welcome": "欢迎使用您的应用程序",
+    "getStarted": "开始使用",
+    "getStartedDesc": "这是一个功能完整的应用模板，您可以基于此快速开发。",
+    "customization": "自定义",
+    "customizationDesc": "根据您的需求自定义应用的外观和功能。",
+    "documentation": "文档",
+    "documentationDesc": "查看详细的文档了解如何使用和扩展此模板。"
+  },
+  "Settings": {
+    "title": "设置",
+    "theme": "主题",
+    "theme_description": "选择您喜欢的主题",
+    "language": "语言",
+    "language_description": "选择您的首选语言",
+    "notifications": "通知",
+    "notification": "通知",
+    "notification_description": "管理通知设置",
+    "dataCollection": "数据收集",
+    "data_collection": "数据收集",
+    "data_collection_description": "是否允许收集使用数据",
+    "save": "保存",
+    "cancel": "取消",
+    "font_size": "字体大小",
+    "font_size_description": "调整界面字体大小",
+    "save_analysis_history": "保存分析历史",
+    "save_analysis_history_description": "是否保存分析历史记录",
+    "save_chat_history": "保存聊天历史",
+    "save_chat_history_description": "是否保存聊天历史记录",
+    "about": "关于",
+    "general": "通用",
+    "application_settings": "应用设置",
+    "privacy_settings": "隐私设置",
+    "contact_us": "联系我们",
+    "service_terms": "服务条款",
+    "version": "版本",
+    "view": "查看"
+  },
+  "Subscription": {
+    "title": "订阅管理",
+    "manage_subscription": "管理订阅",
+    "currentPlan": "当前计划",
+    "current_plan": "当前计划",
+    "usage": "使用情况",
+    "billing": "账单历史",
+    "billing_history": "账单历史",
+    "manage": "管理订阅",
+    "subscription": "订阅",
+    "error_loading_data": "加载数据时出错",
+    "try_again": "重试",
+    "refresh": "刷新",
+    "refreshing": "刷新中",
+    "select_plan": "选择计划",
+    "select_plan_description": "选择最适合您需求的计划",
+    "current_plan": "当前计划",
+    "processing": "处理中",
+    "already_subscribed": "您已经订阅了此计划",
+    "failed": "失败",
+    "most_popular": "最受欢迎",
+    "learn_more_pricing": "了解更多定价信息",
+    "pricing_tooltip": "查看详细的定价信息和功能对比",
+    "active": "活跃",
+    "canceled": "已取消",
+    "expired": "已过期",
+    "not_subscribed": "未订阅",
+    "monthly": "月付",
+    "yearly": "年付",
+    "3_months": "3个月",
+    "cancel_subscription": "取消订阅",
+    "resume_subscription": "恢复订阅",
+    "confirm": "确认",
+    "cancel": "取消",
+    "confirm_cancel_title": "确认取消订阅",
+    "confirm_cancel_description": "您确定要取消订阅吗？取消后您将失去所有高级功能。",
+    "subscription_cancelled": "订阅已取消",
+    "subscription_resumed": "订阅已恢复",
+    "operation_failed": "操作失败",
+    "cancel_subscription_error": "取消订阅失败",
+    "resume_subscription_error": "恢复订阅失败",
+    "start_date": "开始日期",
+    "end_date": "结束日期",
+    "payment_method": "支付方式",
+    "usage_statistics": "使用统计",
+    "total_credits": "总积分",
+    "text_usage": "文本使用量",
+    "image_usage": "图片使用量",
+    "credits_consumption_rule": "积分消费规则：文本分析消耗1积分，图片分析消耗2积分",
+    "text_quote_description": "文本分析使用情况",
+    "image_quote_description": "图片分析使用情况",
+    "no_billing_history": "暂无账单历史",
+    "no_billing_records": "您还没有任何账单记录。",
+    "no_transactions_found": "未找到交易记录",
+    "search_transactions": "搜索交易",
+    "filter": "筛选",
+    "sort_by_date": "按日期排序",
+    "sort_by_amount": "按金额排序",
+    "date": "日期",
+    "amount": "金额",
+    "status": "状态",
+    "action": "操作",
+    "details": "详情",
+    "succeeded": "成功",
+    "failed": "失败",
+    "pending": "待处理",
+    "refunded": "已退款",
+    "invoice": "发票",
+    "receipt": "收据",
+    "total_spent": "总支出",
+    "total_transactions": "总交易数",
+    "view_subscription_plan": "查看订阅计划",
+    "remaining": "剩余 {count}",
+    "used": "已使用 {count}",
+    "reset_at": "重置于 {date}",
+    "days_until_reset": "{count} 天后重置",
+    "subscription_canceled_message": "您的订阅将在 {date} 到期。在此之前，您仍可以使用 {plan} 的所有功能。"
+  },
+  "NotFound": {
+    "title": "页面未找到",
+    "description": "抱歉，我们找不到您要查找的页面。",
+    "backToHome": "返回首页",
+    "helpText": "如果您需要帮助，请联系我们。",
+    "contactUs": "联系我们",
+    "helpCenter": "帮助中心"
+  },
+  "Marketing": {
+    "beta_testing": "Beta 测试",
+    "beta_message": "我们正在进行 Beta 测试，欢迎体验！",
+    "new_feature_message": "新功能上线！立即体验最新功能。",
+    "promo_message": "限时优惠！立即订阅享受特价。",
+    "limited_message": "限时活动，数量有限！",
+    "ends_in": "活动结束倒计时",
+    "days": "天",
+    "hours": "小时",
+    "minutes": "分钟"
+  },
+  "Common": {
+    "close": "关闭",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "warning": "警告",
+    "info": "信息"
+  },
+  "errors": {
+    "generic": "发生了一个错误，请稍后重试。",
+    "network": "网络连接错误，请检查您的网络连接。",
+    "unauthorized": "您没有权限执行此操作。",
+    "not_found": "未找到请求的资源。",
+    "validation": "输入数据验证失败。",
+    "server": "服务器错误，请稍后重试。"
+  }
+}
