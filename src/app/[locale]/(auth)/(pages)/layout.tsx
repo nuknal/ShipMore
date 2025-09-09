@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { AppFooter } from '@/components/app-footer';
-import { AppHeader } from '@/components/app-header';
+import AppAuthedHeader from '@/components/app-authed-header';
 import { AppSidebar } from '@/components/app-sidebar';
 
 export default function PagesLayout({
@@ -11,19 +10,18 @@ export default function PagesLayout({
 }) {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Header */}
-      <AppHeader />
+      {/* 可选：桌面隐藏的 Rail，移动端保留底部导航 */}
+      <AppSidebar showDesktop={false} />
 
-      {/* Sidebar Menu */}
-      <AppSidebar />
+      {/* 合并后的顶栏 + 子导航 */}
+      <AppAuthedHeader />
 
       {/* Main Content Area */}
-      <main className="grow py-16 md:pb-6">
-        {children}
+      <main className="grow">
+        <div className="container mx-auto px-4 py-6">
+          {children}
+        </div>
       </main>
-
-      {/* Footer */}
-      <AppFooter />
     </div>
   );
 }

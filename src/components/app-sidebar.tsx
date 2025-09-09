@@ -12,7 +12,7 @@ import React from 'react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Link } from '@/i18n/navigation';
 
-export function AppSidebar() {
+export function AppSidebar({ showDesktop = true }: { showDesktop?: boolean }) {
   const t = useTranslations('Menu');
   const pathname = usePathname();
 
@@ -34,7 +34,7 @@ export function AppSidebar() {
   return (
     <TooltipProvider>
       {/* 桌面端侧边菜单 */}
-      <div className="fixed left-6 top-1/2 z-10 hidden w-auto -translate-y-1/2 rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 md:block">
+      <div className={`fixed left-6 top-1/2 z-10 ${showDesktop ? 'md:block' : 'md:hidden'} hidden w-auto -translate-y-1/2 rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800`}>
         <div className="flex flex-col justify-start space-y-4 p-3">
           {menuItems.map((item, index) => {
             const active = isActive(item.href);
