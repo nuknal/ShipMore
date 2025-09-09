@@ -82,7 +82,7 @@ export function Navbar() {
     { name: t('Pricing.badge'), href: '#pricing' },
     { name: t('FAQ.badge'), href: '#faq' },
     { name: 'Dashboard', href: '/dashboard' },
-    { name: 'Github', href: 'https://github.com/nuknal/shipmore' },
+    { name: 'Github', href: 'https://github.com/nuknal/ShipMore' },
   ];
 
   return (
@@ -115,15 +115,33 @@ export function Navbar() {
 
           {/* 桌面导航链接 */}
           <div className="hidden items-center space-x-10 md:flex">
-            {navLinks.map(link => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-base font-semibold text-gray-800 transition-colors hover:text-primary-600 dark:text-gray-200 dark:hover:text-primary-400"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isExternalLink = link.href.startsWith('http');
+
+              if (isExternalLink) {
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base font-semibold text-gray-800 transition-colors hover:text-primary-600 dark:text-gray-200 dark:hover:text-primary-400"
+                  >
+                    {link.name}
+                  </a>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-base font-semibold text-gray-800 transition-colors hover:text-primary-600 dark:text-gray-200 dark:hover:text-primary-400"
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* 桌面设置和登录/注册按钮或用户头像 */}
@@ -205,17 +223,33 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div className="mt-2 rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 dark:shadow-gray-900/30 md:hidden">
             <div className="flex flex-col space-y-4">
-              {navLinks.map(link => (
-                <Button
-                  key={link.name}
-                  variant="ghost"
-                  className="w-full justify-start py-3 text-base font-semibold text-gray-800 hover:bg-primary-50 hover:text-primary-600 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-primary-400"
-                  asChild
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <Link href={link.href}>{link.name}</Link>
-                </Button>
-              ))}
+              {navLinks.map((link) => {
+                const isExternalLink = link.href.startsWith('http');
+
+                return (
+                  <Button
+                    key={link.name}
+                    variant="ghost"
+                    className="w-full justify-start py-3 text-base font-semibold text-gray-800 hover:bg-primary-50 hover:text-primary-600 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-primary-400"
+                    asChild
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {isExternalLink
+                      ? (
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {link.name}
+                          </a>
+                        )
+                      : (
+                          <Link href={link.href}>{link.name}</Link>
+                        )}
+                  </Button>
+                );
+              })}
               <div className="mt-2 flex flex-col space-y-3 border-t border-gray-200 pt-4 dark:border-gray-700">
                 {isSignedIn
                   ? (

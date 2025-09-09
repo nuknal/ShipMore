@@ -5,17 +5,17 @@
 @layer base {
   /* 默认主题 - Coral（橙红色） */
   :root {
-    --primary-50: 24 20 5; /* #F9F2EC */
-    --primary-100: 22 16 7; /* #F4E6D9 */
-    --primary-200: 20 12 12; /* #ECC8AF */
-    --primary-300: 18 10 16; /* #E7AD99 */
-    --primary-400: 16 8 18; /* #E19E8C */
-    --primary-500: 11 36 41; /* #CE796B */
-    --primary-600: 9 38 44; /* #C76B5D */
-    --primary-700: 7 44 49; /* #B85A4C */
-    --primary-800: 4 46 53; /* #A44C3F */
-    --primary-900: 1 50 58; /* #8A3F35 */
-    --primary-950: 358 52 63; /* #6D322A */
+    --primary-50: 24 100 95; /* #FDF7F0 */
+    --primary-100: 22 100 90; /* #FAEBD7 */
+    --primary-200: 20 85 80; /* #F2D5B8 */
+    --primary-300: 18 75 70; /* #E7AD99 */
+    --primary-400: 16 70 65; /* #DD9A85 */
+    --primary-500: 11 65 60; /* #CE796B */
+    --primary-600: 9 70 55; /* #C76B5D */
+    --primary-700: 7 75 50; /* #B85A4C */
+    --primary-800: 4 80 45; /* #A44C3F */
+    --primary-900: 1 85 40; /* #8A3F35 */
+    --primary-950: 358 90 30; /* #6D322A */
 
     --secondary-50: 220 14 97; /* #F5F6F8 */
     --secondary-100: 220 14 94; /* #EBEDF0 */
@@ -28,8 +28,8 @@
     --secondary-800: 220 22 25; /* #333D47 */
     --secondary-900: 220 22 18; /* #242C34 */
 
-    --accent-primary: 11 36 41; /* #CE796B */
-    --accent-secondary: 33 47 57; /* #C18C5D */
+    --accent-primary: 11 65 60; /* #CE796B */
+    --accent-secondary: 33 60 55; /* #C18C5D */
   }
 
   /* Blue 主题 */

@@ -40,16 +40,24 @@ export function Hero() {
                 className="rounded-lg border-2 border-primary-200 bg-white px-8 py-4 text-lg font-semibold text-primary-600 shadow-md transition-all hover:-translate-y-1 hover:border-primary-300 hover:bg-primary-50 hover:shadow-lg active:translate-y-0 dark:border-primary-700 dark:bg-gray-800 dark:text-primary-400 dark:hover:bg-gray-700"
                 asChild
               >
-                <Link href="#demo">{t('secondaryButton')}</Link>
+                <a
+                  href="https://github.com/nuknal/ShipMore/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('secondaryButton')}
+                </a>
               </Button>
             </div>
           </div>
           <div className="relative">
-            {locale === 'zh' ? (
-              <HeroImageZh className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
-            ) : (
-              <HeroImage className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
-            )}
+            {locale === 'zh'
+              ? (
+                  <HeroImageZh className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
+                )
+              : (
+                  <HeroImage className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
+                )}
           </div>
         </div>
       </div>
