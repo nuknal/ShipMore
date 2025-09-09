@@ -10,8 +10,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 
-import LanguageSwitcher from './language-switcher';
-import { ThemeToggle } from './theme-toggle';
+import { SettingsDropdown } from './settings-dropdown';
 
 export function Navbar() {
   const t = useTranslations('Landing');
@@ -127,10 +126,9 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* 桌面登录/注册按钮或用户头像 */}
+          {/* 桌面设置和登录/注册按钮或用户头像 */}
           <div className="hidden items-center space-x-3 md:flex">
-            <ThemeToggle />
-            <LanguageSwitcher />
+            <SettingsDropdown />
             {isSignedIn
               ? (
                   <div className="relative flex items-center" ref={userMenuRef}>
@@ -186,10 +184,9 @@ export function Navbar() {
                 )}
           </div>
 
-          {/* 移动端菜单按钮和主题切换按钮 */}
+          {/* 移动端设置和菜单按钮 */}
           <div className="flex items-center space-x-2 md:hidden">
-            <ThemeToggle />
-            <LanguageSwitcher />
+            <SettingsDropdown />
             <button
               type="button"
               className="rounded-lg p-2 text-gray-800 transition-colors hover:bg-gray-100 focus:outline-none dark:text-gray-200 dark:hover:bg-gray-800"

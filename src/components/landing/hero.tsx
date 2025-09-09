@@ -1,9 +1,10 @@
 import { useLocale, useTranslations } from 'next-intl';
-import Image from 'next/image';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
+import { HeroImage } from './hero-image';
+import { HeroImageZh } from './hero-image-zh';
 
 export function Hero() {
   const t = useTranslations('Landing.Hero');
@@ -44,14 +45,11 @@ export function Hero() {
             </div>
           </div>
           <div className="relative">
-            <Image
-              src={locale === 'zh' ? '/images/hero-image-zh.svg' : '/images/hero-image.svg'}
-              alt="ShipMore"
-              width={600}
-              height={400}
-              priority
-              className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50"
-            />
+            {locale === 'zh' ? (
+              <HeroImageZh className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
+            ) : (
+              <HeroImage className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
+            )}
           </div>
         </div>
       </div>

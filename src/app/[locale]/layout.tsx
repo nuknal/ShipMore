@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { AuthProvider } from '@/components/providers/auth-provider';
 import { FontAwesomeProvider } from '@/components/providers/font-awesome-provider';
+import { ColorThemeProvider } from '@/contexts/color-theme-context';
 import { routing } from '@/i18n/routing';
 import '@/styles/globals.css';
 import '@/styles/landing.css';
@@ -85,13 +86,15 @@ export default async function LocaleLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <AuthProvider>
-            <FontAwesomeProvider>
-              <NextIntlClientProvider locale={locale} messages={messages}>
-                {children}
-              </NextIntlClientProvider>
-            </FontAwesomeProvider>
-          </AuthProvider>
+          <ColorThemeProvider>
+            <AuthProvider>
+              <FontAwesomeProvider>
+                <NextIntlClientProvider locale={locale} messages={messages}>
+                  {children}
+                </NextIntlClientProvider>
+              </FontAwesomeProvider>
+            </AuthProvider>
+          </ColorThemeProvider>
         </ThemeProvider>
       </body>
     </html>

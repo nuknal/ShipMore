@@ -7,8 +7,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 
-import LanguageSwitcher from '@/components/landing/language-switcher';
-import { ThemeToggle } from '@/components/landing/theme-toggle';
+import { SettingsDropdown } from '@/components/landing/settings-dropdown';
 import SettingsDialog from '@/components/settings/settings-dialog';
 import { Button } from '@/components/ui/button';
 import { Link, usePathname } from '@/i18n/navigation';
@@ -90,13 +89,10 @@ export default function AppAuthedHeader() {
             })}
           </nav>
 
-          {/* 右侧：主题切换、语言切换、用户菜单 */}
+          {/* 右侧：设置、用户菜单 */}
           <div className="flex items-center space-x-3">
-            {/* 主题切换 */}
-            <ThemeToggle />
-
-            {/* 语言切换 */}
-            <LanguageSwitcher />
+            {/* 设置下拉菜单 */}
+            <SettingsDropdown />
 
             {session?.user
               ? (

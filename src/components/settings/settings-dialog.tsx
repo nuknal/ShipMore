@@ -6,6 +6,7 @@ import { faGear, faInfoCircle, faShieldAlt, faSliders } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+import ColorThemeSelector from '@/components/settings/color-theme-selector';
 import FontSizeSelector from '@/components/settings/font-size-selector';
 import LanguageSelector from '@/components/settings/language-selector';
 import ThemeSelector from '@/components/settings/theme-selector';
@@ -22,6 +23,7 @@ type SettingsDialogProps = {
 export default function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
   const [settings, setSettings] = useState<Settings>({
     theme: 'light',
+    colorTheme: 'coral',
     language: 'en',
     fontSize: 'medium',
     notificationEnabled: true,
@@ -158,6 +160,16 @@ export default function SettingsDialog({ isOpen, onClose }: SettingsDialogProps)
                   </div>
                   <ThemeSelector
                     onChange={value => handleSettingChange('theme', value)}
+                  />
+                </div>
+
+                <div className="rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-800 dark:bg-gray-800">
+                  <div className="mb-3">
+                    <h3 className="font-medium text-gray-800 dark:text-gray-100">颜色主题</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">选择你喜欢的颜色主题</p>
+                  </div>
+                  <ColorThemeSelector
+                    onChange={value => handleSettingChange('colorTheme', value)}
                   />
                 </div>
 

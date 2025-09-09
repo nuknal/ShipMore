@@ -19,16 +19,16 @@ export function FeatureCard({
   return (
     <div
       className={cn(
-        'feature-card bg-white p-6 rounded-xl shadow-sm hover:shadow-lg',
+        'feature-card bg-white p-6 rounded-xl shadow-sm hover:shadow-lg dark:bg-gray-800 dark:shadow-gray-900/30',
         className,
       )}
       {...props}
     >
-      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary-100 text-primary-600">
+      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
         <i className={`${icon} text-xl`}></i>
       </div>
-      <h3 className="mb-2 text-lg font-semibold">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="mb-2 text-lg font-semibold dark:text-white">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-300">{description}</p>
     </div>
   );
 }

@@ -1,5 +1,8 @@
+export type ColorTheme = 'coral' | 'blue' | 'green' | 'purple' | 'orange' | 'rose' | 'teal' | 'neutral';
+
 export type Settings = {
   theme: 'light' | 'dark' | 'system';
+  colorTheme: ColorTheme;
   language: string;
   fontSize: 'small' | 'medium' | 'large';
   notificationEnabled: boolean;

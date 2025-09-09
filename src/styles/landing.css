@@ -63,19 +63,19 @@ body {
 
 /* 渐变背景 */
 .gradient-bg {
-  background: linear-gradient(135deg, #f9f2ec 0%, #e7ad99 100%);
+  background: linear-gradient(135deg, hsl(var(--primary-50)) 0%, hsl(var(--primary-300)) 100%);
 }
 
 /* 新增渐变背景 */
 .gradient-bg-secondary {
-  background: linear-gradient(135deg, #f4e6d9 0%, #c76b5d 100%);
+  background: linear-gradient(135deg, hsl(var(--primary-100)) 0%, hsl(var(--primary-600)) 100%);
 }
 
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(90deg, #b85a4c, #c18c5d);
+  background-image: linear-gradient(90deg, hsl(var(--primary-700)), hsl(var(--accent-secondary)));
 }
 
 /* 滚动动画 */
@@ -216,26 +216,26 @@ body {
 
 /* 按钮悬停效果 */
 .btn-primary {
-  background-color: #ce796b;
+  background-color: hsl(var(--primary-500));
   color: white;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #b85a4c;
+  background-color: hsl(var(--primary-700));
   transform: translateY(-2px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary {
   background-color: white;
-  color: #ce796b;
-  border: 1px solid #f4e6d9;
+  color: hsl(var(--primary-500));
+  border: 1px solid hsl(var(--primary-100));
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background-color: #f9f2ec;
+  background-color: hsl(var(--primary-50));
   transform: translateY(-2px);
 }
 
@@ -250,7 +250,7 @@ body {
   }
   50% {
     transform: scale(1.1);
-    color: #ce796b;
+    color: hsl(var(--primary-500));
   }
   100% {
     transform: scale(1);
@@ -270,7 +270,7 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #b85a4c, #c18c5d);
+  background: linear-gradient(90deg, hsl(var(--primary-700)), hsl(var(--accent-secondary)));
   border-radius: 3px;
 }
 
@@ -282,15 +282,15 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #f9f2ec;
-  color: #ce796b;
+  background-color: hsl(var(--primary-50));
+  color: hsl(var(--primary-500));
   font-size: 24px;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
 
 .feature-card:hover .feature-icon {
-  background-color: #ce796b;
+  background-color: hsl(var(--primary-500));
   color: white;
   transform: scale(1.1);
 }
