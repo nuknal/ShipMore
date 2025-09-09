@@ -102,7 +102,7 @@ export function ColorThemeProvider({ children }: ColorThemeProviderProps) {
 
     // 移除所有主题类
     const root = document.documentElement;
-    availableThemes.forEach((theme) => {
+    availableThemes.forEach((_theme) => {
       root.removeAttribute(`data-color-theme`);
     });
 
