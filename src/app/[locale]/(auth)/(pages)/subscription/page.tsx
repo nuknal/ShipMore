@@ -11,7 +11,7 @@ import React, { useEffect, useState } from 'react';
 import { BillingHistory } from '@/components/subscription/billing-history';
 import { PlanSelector } from '@/components/subscription/plan-selector';
 import { SubscriptionCard } from '@/components/subscription/subscription-card';
-import { UsageStats } from '@/components/subscription/usage-stats';
+import { EstimatedCost, UsageStats } from '@/components/subscription/usage-stats';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -187,6 +187,9 @@ export default function SubscriptionPage() {
                           {usageData && (
                             <div className="rounded-xl border border-gray-100 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800">
                               <UsageStats usageData={usageData} />
+                              <div className="px-6 pb-6">
+                                <EstimatedCost usageData={usageData} />
+                              </div>
                             </div>
                           )}
 

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Card } from '@/components/ui/card';
+import { Link } from '@/i18n/navigation';
 
 export default function DashboardPage() {
   const t = useTranslations('Dashboard');
@@ -36,6 +37,11 @@ export default function DashboardPage() {
           <p className="mt-2 text-gray-600 dark:text-gray-400">
             {t('customizationDesc')}
           </p>
+          <div className="mt-4 grid grid-cols-1 gap-2 text-sm">
+            <Link className="text-blue-600 hover:underline" href="/ai/chat">➡ Chat Demo</Link>
+            <Link className="text-blue-600 hover:underline" href="/ai/image">➡ Image Demo</Link>
+            <Link className="text-blue-600 hover:underline" href="/ai/file-parse">➡ File Parse Demo</Link>
+          </div>
         </Card>
 
         <Card className="p-6">

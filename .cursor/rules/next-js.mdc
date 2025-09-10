@@ -3,3 +3,4 @@ description: Instructs developers to follow Next.js documentation for data fetch
 globs: **/nextjs/**/*
 ---
 - Follow Next.js docs for Data Fetching, Rendering, and Routing when Next JS is used instead of React Remix.
+- All code comments should be in English

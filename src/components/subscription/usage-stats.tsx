@@ -252,3 +252,15 @@ export function UsageStats({ usageData, isLoading = false }: UsageStatsProps) {
     </div>
   );
 }
+
+export function EstimatedCost({ usageData }: { usageData: UsageData }) {
+  const calls = (usageData?.textUsage?.used || 0) + (usageData?.imageUsage?.used || 0);
+  const unitPrice = 0.01; // 示例：每次调用 $0.01
+  const estimated = (calls * unitPrice).toFixed(2);
+  return (
+    <div className="mt-4 rounded-lg border border-gray-100 bg-white p-4 text-sm dark:border-gray-700 dark:bg-gray-800">
+      <div className="font-medium text-gray-900 dark:text-white">Estimated cost this period</div>
+      <div className="mt-1 text-gray-600 dark:text-gray-300">~ ${estimated} (calls × ${unitPrice.toFixed(2)})</div>
+    </div>
+  );
+}
