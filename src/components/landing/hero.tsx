@@ -1,14 +1,13 @@
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 import { HeroImage } from './hero-image';
-import { HeroImageZh } from './hero-image-zh';
 
 export function Hero() {
   const t = useTranslations('Landing.Hero');
-  const locale = useLocale();
+
   return (
     <section className="gradient-bg relative overflow-hidden pb-24 pt-32 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
       <div className="container relative z-10 mx-auto px-4">
@@ -51,13 +50,7 @@ export function Hero() {
             </div>
           </div>
           <div className="relative">
-            {locale === 'zh'
-              ? (
-                  <HeroImageZh className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
-                )
-              : (
-                  <HeroImage className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
-                )}
+            <HeroImage className="card-3d floating rounded-lg shadow-xl dark:shadow-gray-900/50" />
           </div>
         </div>
       </div>
