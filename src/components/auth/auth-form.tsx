@@ -25,7 +25,7 @@ export default function AuthForm({ mode, locale }: AuthFormProps) {
     setIsLoading(true);
     try {
       await signIn(provider, {
-        callbackUrl: getI18nPath('/know', locale),
+        callbackUrl: getI18nPath('/dashboard', locale),
       });
     } catch (error) {
       console.error(isSignIn ? 'signin failed:' : 'signup failed:', error);
@@ -87,7 +87,7 @@ export default function AuthForm({ mode, locale }: AuthFormProps) {
   //     const result = await signIn('email', {
   //       email,
   //       redirect: false,
-  //       callbackUrl: getI18nPath('/know', locale),
+  //       callbackUrl: getI18nPath('/dashboard', locale),
   //     });
 
   //     if (result?.error) {

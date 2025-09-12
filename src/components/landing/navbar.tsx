@@ -150,18 +150,8 @@ export function Navbar() {
             {isSignedIn
               ? (
                   <div className="relative flex items-center" ref={userMenuRef}>
-                    {/* <Button
-                      variant="default"
-                      className="mr-3 flex items-center bg-primary-600 px-4 py-2.5 text-base font-semibold text-white shadow-md hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600"
-                      asChild
-                    >
-                      <Link href="/know">
-                        <span>{t('NavBar.enterKnow')}</span>
-                      </Link>
-                    </Button> */}
-
                     <Link
-                      href="/know"
+                      href="/dashboard"
                       className="overflow-hidden rounded-full"
                     >
                       {session?.user?.image
@@ -260,7 +250,7 @@ export function Navbar() {
                           asChild
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
-                          <Link href="/know">
+                          <Link href="/dashboard">
                             <span>{t('NavBar.enterKnow')}</span>
                           </Link>
                         </Button>

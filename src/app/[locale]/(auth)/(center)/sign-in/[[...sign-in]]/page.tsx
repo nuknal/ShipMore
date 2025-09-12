@@ -14,7 +14,7 @@ export default function SignInPage() {
 
   useEffect(() => {
     if (status === 'authenticated') {
-      router.push(getI18nPath('/know', locale));
+      router.push(getI18nPath('/dashboard', locale));
     }
   }, [status, router, locale]);
 
