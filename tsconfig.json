@@ -68,6 +68,7 @@
     ".storybook/*.ts",
     ".next/types/**/*.ts",
     "**/*.mts",
-    "next-sitemap.config.js"
+    "next-sitemap.config.js",
+    "**/*.d.ts"
   ]
 }

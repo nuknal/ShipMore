@@ -1,10 +1,25 @@
 import type { NextConfig } from 'next';
+// MDX support - enabled after installing @next/mdx
+import createMDX from '@next/mdx';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   // swcMinify: true,
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  experimental: {
+    // Next 13.0.0 - 15.2.x use experimental.turbo for Turbopack configuration
+    turbo: {
+      rules: {
+        '*.mdx': {
+          loaders: ['@mdx-js/loader'],
+          as: '*.js',
+        },
+      },
+      resolveExtensions: ['.mdx', '.tsx', '.ts', '.jsx', '.js', '.mjs', '.json'],
+    },
+  },
   async rewrites() {
     return [
       {
@@ -42,9 +57,13 @@ const nextConfig: NextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
-    contentSecurityPolicy: 'default-src \'self\'; script-src \'none\'; sandbox;',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 };
 
 const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+});
+
+export default withNextIntl(withMDX(nextConfig));
