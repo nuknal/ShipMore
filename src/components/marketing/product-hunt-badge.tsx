@@ -38,11 +38,11 @@ export function ProductHuntBadge({
         target="_blank"
         rel="noopener noreferrer"
         className="group block rounded-lg"
-        aria-label="KnowOne.AI featured on Product Hunt"
+        aria-label="ShipMore.AI featured on Product Hunt"
       >
         <Image
           src={badgeUrl}
-          alt="KnowOne.AI - Understand More & Respond Smarter | Product Hunt"
+          alt="ShipMore - Ship More & Ship Faster | Product Hunt"
           width={width}
           height={height}
           unoptimized

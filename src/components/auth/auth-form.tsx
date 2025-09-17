@@ -112,15 +112,14 @@ export default function AuthForm({ mode, locale }: AuthFormProps) {
           <Link href="/" className="flex items-center">
             <Image
               src="/shipmore.png"
-              alt="KnowOne AI Logo"
+              alt="ShipMore AI Logo"
               width={32}
               height={32}
               className="mr-2"
             />
             <h1 className="text-2xl font-bold">
-              <span className="text-primary-700 dark:text-primary-500">Know</span>
-              <span className="text-primary-500 dark:text-primary-400">One</span>
-              <span className="text-primary-300 dark:text-primary-300"> AI</span>
+              <span className="text-primary-700 dark:text-primary-500">Ship</span>
+              <span className="text-primary-500 dark:text-primary-400">More</span>
             </h1>
           </Link>
           <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">

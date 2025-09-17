@@ -2,8 +2,8 @@
 
 import FingerprintJS from '@fingerprintjs/fingerprintjs';
 
-const VISITOR_ID_KEY = 'knowone-visitor-id';
-const VISITOR_CREATED_AT_KEY = 'knowone-visitor-created-at';
+const VISITOR_ID_KEY = 'ShipMore-visitor-id';
+const VISITOR_CREATED_AT_KEY = 'ShipMore-visitor-created-at';
 
 /**
  * 获取或生成访客 ID

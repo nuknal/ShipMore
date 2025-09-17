@@ -9,14 +9,14 @@ export function BackToHomeNav() {
       <div className="flex items-center">
         <Image
           src="/shipmore.png"
-          alt="KnowOne AI Logo"
+          alt="ShipMore AI Logo"
           width={28}
           height={28}
           className="mr-2"
         />
         <h1 className="text-xl font-bold">
-          <span className="text-primary-700 dark:text-primary-400">Know</span>
-          <span className="text-primary-500 dark:text-primary-300">One</span>
+          <span className="text-primary-700 dark:text-primary-400">Ship</span>
+          <span className="text-primary-500 dark:text-primary-300">More</span>
         </h1>
       </div>
     </Link>

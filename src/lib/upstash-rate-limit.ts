@@ -22,7 +22,7 @@ export async function rateLimitVisitor(
     }),
     limiter: Ratelimit.slidingWindow(tokens, window),
     analytics: true,
-    prefix: 'knowone-landing-know-ratelimit',
+    prefix: 'ShipMore-landing-know-ratelimit',
   });
 
   // 从请求头获取访客 ID
